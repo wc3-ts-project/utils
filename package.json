@@ -11,6 +11,7 @@
   "author": "WriteCoin",
   "license": "ISC",
   "devDependencies": {
+    "ceres-decl": "^1.0.8",
     "ceres-tstl": "^0.31.0-patch1",
     "lua-types": "2.8.0"
   },

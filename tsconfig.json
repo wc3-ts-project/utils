@@ -14,6 +14,8 @@
       "lua-types/core/table",
       "lua-types/core/os",
       "lua-types/special/5.3",
+      "lua-types/5.3",
+      "ceres-decl/ceres",
       "war3-types/core/compat",
       "war3-types/core/common",
       "war3-types/core/blizzard",
