@@ -9,7 +9,6 @@ export const init = (
     GetRandomReal(0, 360)
   )
 ) => {
-  print('ceres-ts-utils')
   wait(2)
   print(DoNothing)
   print(bj_ALLIANCE_ALLIED)
