@@ -1,8 +1,8 @@
-declare type integer = number
-declare type real = number
-declare type Primitive = boolean | integer | real | string
-declare type rawcode = integer | string
-declare type order = rawcode
+type integer = number
+type real = number
+type Primitive = boolean | integer | real | string
+type rawcode = integer | string
+type order = rawcode
 
-declare type code = () => void
-declare type codeboolexpr = () => boolean
+type code = () => void
+type codeboolexpr = () => boolean
