@@ -1,3 +1,5 @@
-compiletime(() => {
-  require("./lualib_bundle")
-})
+export const init = () => {
+    compiletime(() => {
+        require("./lualib_bundle")
+    })
+}
