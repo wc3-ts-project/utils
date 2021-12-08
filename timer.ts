@@ -1,10 +1,10 @@
 import { timerStart } from "./debug"
 
-export const setTimeout = (time: real, callback: code, isDestroy = true) => {
+export const setTimeout = (time: real, callback: code, noDestroy = false) => {
     const timer = CreateTimer()
     timerStart(timer, time, false, () => {
         callback()
-        if (isDestroy) {
+        if (!noDestroy) {
             PauseTimer(timer)
             DestroyTimer(timer)
         }

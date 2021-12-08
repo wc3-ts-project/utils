@@ -1,4 +1,5 @@
 import "./compiletimeObject"
+import "./compiletimeArray"
 
 export const init = () => {
     compiletime(() => {

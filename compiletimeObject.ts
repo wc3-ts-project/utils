@@ -1,6 +1,7 @@
 let objectKeys: <T extends object>(input: T) => (keyof T)[]
 let objectEntries: <T extends object>(input: T) => [keyof T, T[keyof T]][]
 let objectValues: <T extends object>(input: T) => T[keyof T][]
+let unionSets: <T extends Object, R extends Object>(a: Set<T>, b: Set<R>) => Set<T | R>
 let tableToString: <T extends object>(table: T, name: string) => string
 
 compiletime(() => {
@@ -22,6 +23,14 @@ compiletime(() => {
             result.push(input[key])
         }
         return result
+    }
+
+    unionSets = <T extends Object, R extends Object>(a: Set<T>, b: Set<R>): Set<T | R> => {
+        const resultSet: Set<T | R> = a
+        b.forEach(v => {
+            resultSet.add(v)
+        })
+        return resultSet
     }
 
     function getSubTableText<T extends object>(
